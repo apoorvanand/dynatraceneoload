@@ -1,0 +1,85 @@
+F:\Dynatrace>mvn clean package
+[INFO] Scanning for projects...
+[INFO]
+[INFO] -------------< com.neotys.dynatrace:DynatraceIntegration >--------------
+[INFO] Building DynatraceIntegration 3.0.3-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO]
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ DynatraceIntegration ---
+[INFO]
+[INFO] --- addjars-maven-plugin:1.0.4:add-jars (default) @ DynatraceIntegration ---
+[INFO] Installing F:\Dynatrace\lib\swagger-java-client-1.0.0.jar to C:\Users\anand\.m2\repository\com\neotys\dynatrace\DynatraceIntegration-swagger-java-client-1.0.0.jar\3.0.3-SNAPSHOT\DynatraceIntegration-swagger-java-client-1.0.0.jar-3.0.3-SNAPSHOT.jar
+[INFO] Installing C:\Users\anand\AppData\Local\Temp\DynatraceIntegration-swagger-java-client-1.0.0.jar5959687186707156420.pom to C:\Users\anand\.m2\repository\com\neotys\dynatrace\DynatraceIntegration-swagger-java-client-1.0.0.jar\3.0.3-SNAPSHOT\DynatraceIntegration-swagger-java-client-1.0.0.jar-3.0.3-SNAPSHOT.pom
+[INFO]
+[INFO] --- maven-resources-plugin:2.4.3:resources (default-resources) @ DynatraceIntegration ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 6 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ DynatraceIntegration ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 22 source files to F:\Dynatrace\target\classes
+[WARNING] /F:/Dynatrace/src/main/java/com/neotys/dynatrace/common/HTTPGeneratorUtils.java: Some input files use or override a deprecated API.
+[WARNING] /F:/Dynatrace/src/main/java/com/neotys/dynatrace/common/HTTPGeneratorUtils.java: Recompile with -Xlint:deprecation for details.
+[WARNING] /F:/Dynatrace/src/main/java/com/neotys/dynatrace/monitoring/custommetrics/DynatraceReportCustomMetrics.java: F:\Dynatrace\src\main\java\com\neotys\dynatrace\monitoring\custommetrics\DynatraceReportCustomMetrics.java uses unchecked or unsafe operations.
+[WARNING] /F:/Dynatrace/src/main/java/com/neotys/dynatrace/monitoring/custommetrics/DynatraceReportCustomMetrics.java: Recompile with -Xlint:unchecked for details.
+[INFO]
+[INFO] --- maven-resources-plugin:2.4.3:testResources (default-testResources) @ DynatraceIntegration ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory F:\Dynatrace\src\test\resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ DynatraceIntegration ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to F:\Dynatrace\target\test-classes
+[INFO]
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ DynatraceIntegration ---
+[INFO] Surefire report directory: F:\Dynatrace\target\surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.neotys.dynatrace.events.DynatraceEventStopActionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.098 sec
+
+Results :
+
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ DynatraceIntegration ---
+[INFO] Building jar: F:\Dynatrace\target\DynatraceIntegration-3.0.3-SNAPSHOT.jar
+[INFO]
+[INFO] --- maven-jar-plugin:2.4:jar (default) @ DynatraceIntegration ---
+[INFO]
+[INFO] --- maven-shade-plugin:2.1:shade (default) @ DynatraceIntegration ---
+[INFO] Excluding com.neotys.actions:neotys-custom-action-api:jar:2.9.1 from the shaded jar.
+[INFO] Including com.google.code.findbugs:jsr305:jar:2.0.1 in the shaded jar.
+[INFO] Excluding com.neotys.actions:neotys-custom-action-util:jar:1.0.3 from the shaded jar.
+[INFO] Including com.squareup.okhttp:okhttp:jar:2.7.5 in the shaded jar.
+[INFO] Including com.squareup.okio:okio:jar:1.6.0 in the shaded jar.
+[INFO] Including com.google.code.gson:gson:jar:2.6.2 in the shaded jar.
+[INFO] Including joda-time:joda-time:jar:2.9.3 in the shaded jar.
+[INFO] Including com.neotys.dynatrace:DynatraceIntegration-swagger-java-client-1.0.0.jar:jar:3.0.3-SNAPSHOT in the shaded jar.
+[WARNING] okhttp-2.7.5.jar, DynatraceIntegration-3.0.3-SNAPSHOT.jar define 1 overlappping classes:
+[WARNING]   - com.squareup.okhttp.internal.io.RealConnection
+[WARNING] maven-shade-plugin has detected that some .class files
+[WARNING] are present in two or more JARs. When this happens, only
+[WARNING] one single version of the class is copied in the uberjar.
+[WARNING] Usually this is not harmful and you can skeep these
+[WARNING] warnings, otherwise try to manually exclude artifacts
+[WARNING] based on mvn dependency:tree -Ddetail=true and the above
+[WARNING] output
+[WARNING] See http://docs.codehaus.org/display/MAVENUSER/Shade+Plugin
+[INFO] Replacing original artifact with shaded artifact.
+[INFO] Replacing F:\Dynatrace\target\DynatraceIntegration-3.0.3-SNAPSHOT.jar with F:\Dynatrace\target\DynatraceIntegration-3.0.3-SNAPSHOT-shaded.jar
+[INFO] Dependency-reduced POM written at: F:\Dynatrace\target\com.googlecode.addjars.mojo.AddJarsMojo\dependency-reduced-pom.xml
+[INFO] Dependency-reduced POM written at: F:\Dynatrace\target\com.googlecode.addjars.mojo.AddJarsMojo\dependency-reduced-pom.xml
+[INFO]
+[INFO] --- maven-resources-plugin:2.4.3:copy-resources (copy-resources) @ DynatraceIntegration ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory F:\Dynatrace\target\com.googlecode.addjars.mojo.AddJarsMojo\target
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  22.645 s
+[INFO] Finished at: 2020-04-06T13:23:35+05:30
+[INFO] ------------------------------------------------------------------------
